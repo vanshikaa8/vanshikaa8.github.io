@@ -1,0 +1,180 @@
+
+body{
+    margin: 0;
+    font-size: 18px;
+    background-color: floralwhite;
+    text-align: center;
+    overflow: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.header{
+    width:100%;
+    height: 100px;
+    background-color: skyblue;
+    text-align: center;  
+}
+.header img {
+  float: left;
+  width: 200px;
+  height: 100px;
+  background: #555;
+}
+.header h1{
+  text-align: left;
+  position:relative;
+  top: 10px;
+  left: 10px;
+  bottom: 0;
+}
+.header p{
+    display: inline;
+    text-align: right;
+    padding-left: 40%
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+}
+nav ul li{
+    float:left;
+    width: 15%;
+    padding: 5px;
+    border: 1px solid black;
+}
+nav ul li a:hover, nav ul li.active a{
+    background-color:coral;
+    color:antiquewhite;
+}
+
+nav ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5% 12 %;
+}
+
+.heading{
+    background-color:coral ;
+}
+button{
+    background-color:skyblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+button:hover {
+  background-color:dodgerblue;
+  color: white;
+}
+
+.one-third{
+    width: 29%;
+    float: left;
+    padding: 2%;
+    background-color: bisque
+}
+.one-third img{
+    width: 80%;
+    height: 100%;
+}
+
+.left-col{
+    width:40%;
+    float:left;
+    padding: 1%;
+}
+
+.sidebar{
+    width: 55%;
+    float:right;
+    padding: 1%;
+    
+}
+
+.clearfix{
+    clear: both;
+}
+
+footer {
+background-color: skyblue;
+    width: 100%;
+    padding: 2%;
+    
+}
+
+footer img{
+    width: 100px;
+}
+
+.foot-text{
+  font: normal 36px 'Cookie', cursive;  
+}
+
+.social{
+    font-size: 400%;
+}
+.socia; a{
+    color: antiquewhite;
+    padding: 3%;   
+}
+.social a:hover{
+    color:bisque;
+}
+
+@media (max-height:768px){
+    nav ul{
+        padding-left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        border-left: 0;
+        border-right: 0;
+    }
+    nav ul li a{
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    .left-col{
+        width: 100%;
+        padding: 0;
+    }
+    .sidebar{
+        width: 100%;
+        padding: 0;
+    }
+    .one-third{
+        width: 100%;
+        padding: 0;
+    }
+    .one-third img{
+        width: 100%;
+        padding: 0;
+    }
+    .social{
+        font-size: 200%;
+    }
+    
+	footer {
+        position: static; 
+    }
+	header {
+        padding-top:40px; 
+    }
+    header .p{
+        display: none;
+    }
+}
